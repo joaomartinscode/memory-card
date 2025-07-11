@@ -1,15 +1,11 @@
 import Card from "./Card";
+import "../styles/CardGrid.css";
 
 const CardGrid = ({ cards, onCardClick }) => {
 	return (
 		<div className="card-grid">
-			{cards.map((Card) => (
-				<card
-					key={Card.id}
-					title={Card.title}
-					image={Card.image}
-					onClick={() => onCardClick(Card.id)}
-				/>
+			{cards.map((card) => (
+				<Card key={card.uid} {...card} onClick={() => onCardClick(card.uid)} />
 			))}
 		</div>
 	);

@@ -1,0 +1,63 @@
+@import url('https://fonts.googleapis.com/css2?family=Press+Start+2P&family=Inter:wght@400;600&display=swap');
+
+body {
+    margin: 0;
+    padding: 0;
+    background: linear-gradient(to bottom right, #4f46e5, #9333ea);
+    font-family: 'Inter', sans-serif;
+    color: #fff;
+}
+
+.App {
+    text-align: center;
+    padding: 2rem;
+    min-height: 100vh;
+}
+
+h1 {
+    font-family: 'Press Start 2P', cursive;
+    font-size: 1.6rem;
+    margin-bottom: 2rem;
+    color: #facc15;
+    text-shadow: 2px 2px #000;
+}
+
+.scoreboard {
+    background: rgba(255, 255, 255, 0.1);
+    backdrop-filter: blur(10px);
+    border: 1px solid rgba(255, 255, 255, 0.2);
+    padding: 1rem 2rem;
+    border-radius: 12px;
+    box-shadow: 0 10px 20px rgba(0, 0, 0, 0.3);
+    display: inline-block;
+    margin-bottom: 2rem;
+    font-size: 1.1rem;
+}
+
+.message {
+    margin: 2rem auto;
+    padding: 1.5rem 2rem;
+    max-width: 400px;
+    border-radius: 12px;
+    background: rgba(255, 255, 255, 0.15);
+    backdrop-filter: blur(12px);
+    box-shadow: 0 10px 30px rgba(0, 0, 0, 0.3);
+    color: #fff;
+    font-weight: 600;
+}
+
+.message button {
+    margin-top: 1rem;
+    padding: 0.6rem 1.2rem;
+    border: none;
+    border-radius: 10px;
+    background: #facc15;
+    color: #000;
+    font-weight: 700;
+    cursor: pointer;
+    transition: background 0.3s ease;
+}
+
+.message button:hover {
+    background: #eab308;
+}

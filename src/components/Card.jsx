@@ -1,8 +1,18 @@
-const Card = ({ title, image, onClick }) => {
+import "../styles/Cards.css";
+
+const Card = ({ name, image, flipped, matched, onClick }) => {
 	return (
-		<div className="card" onClick={onClick}>
-			<img src={image} alt={title} />
-			<h3>{title.charAt(0).toUpperCase() + title.slice(1)}</h3>
+		<div
+			className={`card ${flipped || matched ? "flipped" : ""}`}
+			onClick={onClick}
+		>
+			<div className="card-inner">
+				<div className="card-front">❓</div>
+				<div className="card-back">
+					<img src={image} alt={name} />
+					<h4>{name}</h4>
+				</div>
+			</div>
 		</div>
 	);
 };

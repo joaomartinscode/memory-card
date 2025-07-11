@@ -1,4 +1,4 @@
-const card = ({ title, image, onClick }) => {
+const Card = ({ title, image, onClick }) => {
 	return (
 		<div className="card" onClick={onClick}>
 			<img src={image} alt={title} />
@@ -7,4 +7,4 @@ const card = ({ title, image, onClick }) => {
 	);
 };
 
-export default card;
+export default Card;
